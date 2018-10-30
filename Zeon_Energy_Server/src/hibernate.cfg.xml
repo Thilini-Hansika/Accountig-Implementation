@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/accounting?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">mysql</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="use_sql_comments">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="zeon.energySystem.common.model.Customer"/>
+    <mapping class="zeon.energySystem.common.model.CreditCard"/>
+    <mapping class="zeon.energySystem.common.model.CustomerPayment"/>
+    <mapping class="zeon.energySystem.common.model.Vendor"/>
+    <mapping class="zeon.energySystem.common.model.VendorPayment"/>
+    <mapping class="zeon.energySystem.common.model.Terms"/>
+    <mapping class="zeon.energySystem.common.model.Tax"/>
+    <mapping class="zeon.energySystem.common.model.Users"/>
+    <mapping class="zeon.energySystem.common.model.GroupItemDetail"/>
+    <mapping class="zeon.energySystem.common.model.TaxGroupDetail"/>
+    <mapping class="zeon.energySystem.common.model.UserType"/>
+    <mapping class="zeon.energySystem.common.model.Invoice"/>
+    <mapping class="zeon.energySystem.common.model.OrderDetails"/>
+    <mapping class="zeon.energySystem.common.model.FixedAsset"/>
+    <mapping class="zeon.energySystem.common.model.DiscountItem"/>
+    <mapping class="zeon.energySystem.common.model.PaymentItem"/>
+    <mapping class="zeon.energySystem.common.model.GroupItem"/>
+    <mapping class="zeon.energySystem.common.model.NonInventoryItem"/>
+    <mapping class="zeon.energySystem.common.model.OtherChargeItem"/>
+    <mapping class="zeon.energySystem.common.model.SaleTaxGroupItem"/>
+    <mapping class="zeon.energySystem.common.model.SaleTaxItem"/>
+    <mapping class="zeon.energySystem.common.model.SubTotalItem"/>
+    <mapping class="zeon.energySystem.common.model.TaxGroupDetail"/>
+    <mapping class="zeon.energySystem.common.model.ServiceItem"/>
+    <mapping class="zeon.energySystem.common.model.Employee"/>
+    <mapping class="zeon.energySystem.common.model.CustomerReceived"/>
+    <mapping class="zeon.energySystem.common.model.VendorPayble"/>
+    <mapping class="zeon.energySystem.common.model.Payment"/>
+    <mapping class="zeon.energySystem.common.model.InventoryItem"/>
+    <mapping class="zeon.energySystem.common.model.Purchase"/>
+    <mapping class="zeon.energySystem.common.model.PurchaseItem"/>
+    <mapping class="zeon.energySystem.common.model.Expence"/>
+    <mapping class="zeon.energySystem.common.model.PettyCash"/>
+    <mapping class="zeon.energySystem.common.model.PettyDetail"/>
+    <mapping class="zeon.energySystem.common.model.BankAccount"/>
+    <mapping class="zeon.energySystem.common.model.Account"/>
+    <mapping class="zeon.energySystem.common.model.ExpenceAccount"/>
+    <mapping class="zeon.energySystem.common.model.ItemType"/>
+    <mapping class="zeon.energySystem.common.model.Discount"/>
+    <mapping class="zeon.energySystem.common.model.Journal"/>
+    <mapping class="zeon.energySystem.common.model.Cheque"/>
+    <mapping class="zeon.energySystem.common.model.ChequeDetails"/>
+    <mapping class="zeon.energySystem.common.model.Transfer"/>
+    <mapping class="zeon.energySystem.common.model.COGSAccount"/>
+    <mapping class="zeon.energySystem.common.model.IncomeAccount"/>
+    <mapping class="zeon.energySystem.common.model.Employee"/>
+  </session-factory>
+</hibernate-configuration>
